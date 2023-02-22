@@ -6,17 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey page</title>
 </head>
-<header>
+<body>
+  <header>
     <nav class="menu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Survey</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="survey.html">Survey</a></li>
         </ul>
       </nav>
       <img src="/img/travel_logo.png" alt="Travel logo" height="200">
     <h1>Survey</h1>
-</header>
-<body>
-    
+  </header>
+   <main>
+      <form action="https://formspree.io/f/xlekbanz" method="POST">
+        <label>What your favorite 5 places to travel?
+          <br>
+          <textarea name="message" placeholder="What your favorite 5 places to travel?"></textarea>
+        </label>
+        <br>
+        <label>Your name
+          <input type="text" placeholder="Your name" required pattern="[A-z]{2,16}">
+        </label>
+        <br>
+        <label>Your email
+          <input type="email" placeholder="Your email">
+        </label>
+        <br>
+        <input type="submit">
+      </form>
+   </main> 
 </body>
 </html>
